@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aksara Batak</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --gold: #ffe541;
+      --font-serif-display: 'DM Serif Display', serif;
+      --font-serif-text: 'DM Serif Text', serif;
+      --font-quicksand: 'Quicksand', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-quicksand);
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    .header-section {
+      position: relative;
+      width: 100%;
+      height: 876px;
+      background-color: #320b0b;
+      overflow: hidden;
+    }
+
+    .header-section img.bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 65px;
+      right: 80px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      z-index: 2;
+    }
+
+    .navbar-link {
+      color: var(--white);
+      font-size: 20px;
+      font-family: var(--font-quicksand);
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+    }
+
+    .container {
+      position: absolute;
+      top: 380px;
+      left: 68px;
+      z-index: 2;
+      color: white;
+      max-width: 600px;
+    }
+
+    .container h1 {
+      font-size: 64px;
+      font-family: var(--font-serif-text);
+      margin: 0;
+    }
+
+    .container h2 {
+      font-size: 32px;
+      font-family: var(--font-serif-text);
+      color: var(--gold);
+      margin: 10px 0;
+    }
+
+    .gradient-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 116px;
+      background: linear-gradient(to bottom, transparent, white);
+      z-index: 1;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-family: var(--font-serif-text);
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .aksara-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+
+    .aksara-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .aksara-image {
+      max-width: 300px;
+      flex-shrink: 0;
+    }
+
+    .aksara-image img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .card {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 130px;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #520000;
+      color: white;
+      padding: 6px 14px;
+      font-size: 12px;
+      border-radius: 14px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .divider {
+      border-top: 1px solid #999;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header-section">
+    <img src="img/tentang.png" alt="Background" class="bg" />
+
+    <div class="navbar">
+      <div class="navbar-link">Beranda</div>
+      <div class="navbar-link">Budaya</div>
+      <div class="navbar-link">Tentang</div>
+      <div class="navbar-link">Galeri</div>
+      <img src="https://cdn.animaapp.com/projects/687f23700f7550798ae31b31/releases/6881abf9b22642d08e0677c5/img/arrow-drop-down-2.svg" alt="dropdown" style="height: 35px;">
+    </div>
+
+    <div class="container">
+      <h1>Aksara Batak:</h1>
+      <h2>Warisan Leluhur dalam Jejak Tulisan</h2>
+      <p style="font-size: 13px; margin-top: 10px;">
+        Aksara Batak adalah sistem tulisan tradisional masyarakat Batak yang diwariskan secara turun-temurun. Bentuknya unik, nadanya kuat, dan maknanya dalam — mencerminkan peradaban yang telah ada jauh sebelum aksara Latin digunakan di wilayah Nusantara.
+      </p>
+    </div>
+
+    <div class="gradient-bottom"></div>
+  </div>
+
+  <!-- PENGENALAN -->
+  <section>
+    <div class="intro">
+      <div class="aksara-container">
+        <div class="aksara-text">
+          <h2>Pengenalan Aksara Batak</h2>
+          <p>
+            Aksara Batak adalah sistem tulisan tradisional yang digunakan oleh berbagai sub-suku Batak seperti Toba, Mandailing, Karo, Pakpak, dan Simalungun. Aksara ini digunakan untuk menulis bahasa daerah masing-masing, terutama pada surat pribadi, naskah adat, dan keagamaan.
+          </p>
+          <p>
+            Aksara Batak termasuk ke dalam rumpun Brahmi dari India Selatan, dan memiliki bentuk yang khas seperti kait, lengkung, dan goresan tajam. Setiap sub-suku memiliki sedikit variasi dalam bentuk dan cara pengucapannya, namun dasarnya tetap serupa.
+          </p>
+          <p>
+            Penulisan Aksara Batak dahulu dilakukan di atas bambu, kulit kayu, atau lontar menggunakan pisau tajam. Kini, aksara ini mulai diajarkan kembali melalui media digital dan pendidikan budaya.
+          </p>
+        </div>
+        <div class="aksara-image">
+          <img src="img/aksara.png" alt="Tabel Aksara Batak">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB-SUKU -->
+  <section>
+    <div class="intro">
+      <h2>Pelajari Aksara Berdasarkan Sub-Suku</h2>
+
+      <div class="divider"></div>
+
+      <!-- Toba -->
+      <div class="card">
+        <img src="https://i.ibb.co/6twvRnx/avatar1.png" alt="Toba">
+        <div class="card-content">
+          <strong>Aksara Batak Toba</strong>
+          <p>Digunakan oleh masyarakat Batak Toba, aksara ini memiliki bentuk paling terdokumentasi dan banyak dijadikan dasar standar.</p>
+          <a href="#" class="btn">Selengkapnya ➜</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Karo -->
+      <div class="card">
+        <img src="https://i.ibb.co/6twvRnx/avatar1.png" alt="Karo">
+        <div class="card-content">
+          <strong>Aksara Batak Karo</strong>
+          <p>Versi aksara Batak dari wilayah Karo ini memiliki gaya penulisan yang lebih tajam dan simetris, biasanya digunakan dalam naskah adat dan hukum.</p>
+          <a href="#" class="btn">Selengkapnya ➜</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Simalungun -->
+      <div class="card">
+        <img src="https://i.ibb.co/6twvRnx/avatar1.png" alt="Simalungun">
+        <div class="card-content">
+          <strong>Aksara Batak Simalungun</strong>
+          <p>Simalungun menggunakan variasi aksara dengan beberapa karakter unik dan pelafalan berbeda dari Toba maupun Mandailing.</p>
+          <a href="#" class="btn">Selengkapnya ➜</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Pakpak -->
+      <div class="card">
+        <img src="https://i.ibb.co/6twvRnx/avatar1.png" alt="Pakpak">
+        <div class="card-content">
+          <strong>Aksara Batak Pakpak</strong>
+          <p>Digunakan di wilayah Pakpak-Dairi, aksara ini masih jarang dijumpai secara luas, namun tetap menjadi simbol penting dalam budaya literasi lokal.</p>
+          <a href="#" class="btn">Selengkapnya ➜</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Mandailing -->
+      <div class="card">
+        <img src="https://i.ibb.co/6twvRnx/avatar1.png" alt="Mandailing">
+        <div class="card-content">
+          <strong>Aksara Batak Mandailing</strong>
+          <p>Aksara ini banyak digunakan untuk menulis teks keagamaan dan surat di wilayah Mandailing dan Angkola, dengan ciri khas bentuk lebih halus dan melengkung.</p>
+          <a href="#" class="btn">Selengkapnya ➜</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+    </div>
+  </section>
+
+</body>
+</html>
