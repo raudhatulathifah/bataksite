@@ -5,172 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aksara Batak</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&family=Quicksand&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --black: #000000;
-      --white: #ffffff;
-      --gold: #ffe541;
-      --font-serif-display: 'DM Serif Display', serif;
-      --font-serif-text: 'DM Serif Text', serif;
-      --font-quicksand: 'Quicksand', sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: var(--font-quicksand);
-      background-color: var(--white);
-      color: var(--black);
-    }
-
-    .header-section {
-      position: relative;
-      width: 100%;
-      height: 876px;
-      background-color: #320b0b;
-      overflow: hidden;
-    }
-
-    .header-section img.bg {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-
-    .navbar {
-      position: absolute;
-      top: 65px;
-      right: 80px;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      z-index: 2;
-    }
-
-    .navbar-link {
-      color: var(--white);
-      font-size: 20px;
-      font-family: var(--font-quicksand);
-      cursor: pointer;
-      text-decoration: none;
-      letter-spacing: 0.2px;
-    }
-
-    .container {
-      position: absolute;
-      top: 380px;
-      left: 68px;
-      z-index: 2;
-      color: white;
-      max-width: 600px;
-    }
-
-    .container h1 {
-      font-size: 64px;
-      font-family: var(--font-serif-text);
-      margin: 0;
-    }
-
-    .container h2 {
-      font-size: 32px;
-      font-family: var(--font-serif-text);
-      color: var(--gold);
-      margin: 10px 0;
-    }
-
-    .gradient-bottom {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 116px;
-      background: linear-gradient(to bottom, transparent, white);
-      z-index: 1;
-    }
-
-    section {
-      padding: 60px 40px;
-    }
-
-    h2 {
-      font-size: 28px;
-      font-family: var(--font-serif-text);
-      margin-bottom: 16px;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.7;
-      margin-bottom: 16px;
-    }
-
-    .intro {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .aksara-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: flex-start;
-      margin-top: 40px;
-    }
-
-    .aksara-text {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .aksara-image {
-      max-width: 300px;
-      flex-shrink: 0;
-    }
-
-    .aksara-image img {
-      width: 100%;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    .card {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 40px;
-      align-items: flex-start;
-    }
-
-    .card img {
-      width: 130px;
-      border-radius: 8px;
-    }
-
-    .card-content {
-      flex: 1;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #520000;
-      color: white;
-      padding: 6px 14px;
-      font-size: 12px;
-      border-radius: 14px;
-      margin-top: 10px;
-      text-decoration: none;
-    }
-
-    .divider {
-      border-top: 1px solid #999;
-      margin: 40px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="global.css" />
 </head>
 <body>
 
@@ -181,9 +16,9 @@
     <div class="navbar">
       <div class="navbar-link">Beranda</div>
       <div class="navbar-link">Budaya</div>
+      <img src="https://cdn.animaapp.com/projects/687f23700f7550798ae31b31/releases/6881abf9b22642d08e0677c5/img/arrow-drop-down-2.svg" alt="dropdown" style="height: 35px;">
       <div class="navbar-link">Tentang</div>
       <div class="navbar-link">Galeri</div>
-      <img src="https://cdn.animaapp.com/projects/687f23700f7550798ae31b31/releases/6881abf9b22642d08e0677c5/img/arrow-drop-down-2.svg" alt="dropdown" style="height: 35px;">
     </div>
 
     <div class="container">
@@ -224,7 +59,6 @@
   <section>
     <div class="intro">
       <h2>Pelajari Aksara Berdasarkan Sub-Suku</h2>
-
       <div class="divider"></div>
 
       <!-- Toba -->
